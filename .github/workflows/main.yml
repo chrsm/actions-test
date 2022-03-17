@@ -7,5 +7,5 @@ jobs:
     steps:
       - name: golangci-lint
         id: golangci-lint
-        uses: actions/lint
+        uses: .github/actions/lint
 
