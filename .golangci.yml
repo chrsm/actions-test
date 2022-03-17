@@ -1,0 +1,10 @@
+run:
+  deadline: 10m
+  tests: false
+  skip-dirs-use-default: true
+  modules-download-mode: readonly
+
+linters:
+  disable-all: false
+  enable-all: true
+
