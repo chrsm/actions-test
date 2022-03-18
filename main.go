@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
+
+	_ "github.com/stretchr/testify"
 )
 
 // violate cuddle rule
