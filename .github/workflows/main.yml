@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Run lint against push
     steps:
+      - name: checkout
+        uses: actions/checkout@master
       - name: golangci-lint
         id: golangci-lint
         uses: ./.github/actions/lint@master
