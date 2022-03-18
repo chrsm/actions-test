@@ -15,4 +15,5 @@ func main() {
 		panic(err)
 	}
 	fmt.Println(byt)
+	fmt.Println("done")
 }
