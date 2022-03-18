@@ -7,7 +7,13 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@master
-      - name: golangci-lint
-        id: golangci-lint
-        uses: ./.github/actions/lint
-
+      - name: install Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.18'
+      - name: install deps
+        run: |
+          go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.44.2
+      - name: lint
+        run: |
+          golangci-lint run
